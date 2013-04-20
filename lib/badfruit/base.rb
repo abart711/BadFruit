@@ -33,6 +33,8 @@ module BadFruit
         url = "#{MOVIE_DETAIL_BASE_URL}/#{movie_id}.json?apikey=#{@api_key}"
       when "reviews"
         url = "#{MOVIE_DETAIL_BASE_URL}/#{movie_id}/reviews.json?apikey=#{@api_key}"
+      when "clips"
+        url = "#{MOVIE_DETAIL_BASE_URL}/#{movie_id}/clips.json?apikey=#{@api_key}"
       when "cast"
         url = "#{MOVIE_DETAIL_BASE_URL}/#{movie_id}/cast.json?apikey=#{@api_key}"
       when "main"
