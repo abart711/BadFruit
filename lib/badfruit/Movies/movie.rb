@@ -38,11 +38,6 @@ module BadFruit
 
      def clips
       data = JSON.parse(@badfruit.get_movie_info(@id, "reviews"))
-      clips = Array.new
-      data["clips"].each do |clip|
-        clips.push(Review.new(clip))
-      end
-       return clips 
     end
   
     def info
