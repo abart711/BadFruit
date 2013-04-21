@@ -35,8 +35,16 @@ module BadFruit
       end
        return reviews 
     end
-
-  
+    
+    def clips
+      data = JSON.parse(@badfruit.get_movie_info(@id, "clips"))
+      clips = Array.new
+      data["clips"].each do |clip|
+        clips.push(Clip.new(clip))
+      end
+        return clips
+    end  
+    
     def info
       @moviehash
     end
