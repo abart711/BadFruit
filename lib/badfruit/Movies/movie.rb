@@ -36,9 +36,6 @@ module BadFruit
        return reviews 
     end
 
-     def clips
-      data = JSON.parse(@badfruit.get_movie_info(@id, "clips"))
-    end
   
     def info
       @moviehash
