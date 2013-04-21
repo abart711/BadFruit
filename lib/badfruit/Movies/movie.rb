@@ -15,6 +15,7 @@ module BadFruit
       @cast = movieHash["abridged_cast"]
       @directors = movieHash["abridged_directors"]
       @links = movieHash["links"]
+      @clips = moviehash["clips"]
       @scores = Scores.new(movieHash["ratings"]) #single score object containing two scores
       @posters = Posters.new(movieHash["posters"]) #single posters object containing four poster urls
       @badfruit = badfruit
