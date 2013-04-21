@@ -37,7 +37,7 @@ module BadFruit
     end
 
      def clips
-      data = JSON.parse(@badfruit.get_movie_info(@id, "reviews"))
+      data = JSON.parse(@badfruit.get_movie_info(@id, "clips"))
     end
   
     def info
